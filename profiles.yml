@@ -1,0 +1,13 @@
+dbt_core_demo: 
+  target: test
+  outputs:
+    test:
+      type: bigquery
+      method: service-account
+      keyfile: C:\Users\shadd\Desktop\dbt\dbt-core-demo\magnetic-music-302616-67d40412e46a.json
+      project: magnetic-music-302616
+      dataset: dbt_est
+      timeout_second: 300
+      location: EU
+      threads: 1
+      priority: interactive
